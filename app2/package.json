@@ -27,10 +27,16 @@
     "webpack-dev-server": "^4.8.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "#-1": "This will transpile + bundle, mode is hardcoded to 'production'",
+    "build": "webpack --config webpack.config.js",
+    
+    "#-2": "This will serve each project on port 3000",
+    "serve": "serve ___dist___ -p 3000",
+    
+    "clean": "rm -rf ___dist___",
+    
+    "#-3": "Use this to build",
+    "cb": "npm run clean && npm run build"
   },
   "eslintConfig": {
     "extends": [
