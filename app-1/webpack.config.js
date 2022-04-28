@@ -15,14 +15,6 @@ module.exports = (env, argv) => {
     entry: `./src/index.ts`,
     output: {
       path: path.resolve(__dirname, '___dist___'),
-      
-      /*
-        Take care to make sure this is unique!
-        If you are serving from 1 server. All chunks
-        have to go into 1 folder. Duplicated names
-        will get files overwritten.
-      */
-      
       filename: 'app-1-module.js'
     },
     devServer: {
